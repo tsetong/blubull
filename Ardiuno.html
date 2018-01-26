@@ -36,10 +36,15 @@
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
-									<span class="date">日期</span>
+									<span class="date">第一次更新：2018.1.26</span>
 									<h1>初学Ardiuno</h1>
 									
-									<p> Ardiuno:适合喜欢直观感受的编程初学者<br />
+									<p> Ardiuno:适合喜欢直观感受的硬件初学者<br
+									 /只为对Ardiuno及单片机都不太了解的旁友提供很浅很浅很浅的帮助。<br />
+									 /为了避免“盲点专家”，本文尽可能地使用即使是对计算机一无所知的人也看得懂的语言。<br />
+									 /可从“函数参考”查看我试图汉化的官方Reference（尚未更新）<br />
+									 /如果你希望得到更多更可靠的信息：<a href="http://www.arduino.cn/portal.php">Ardiuno中文社区</a></p>
+										
 									 /下载与安装<br />
 									 /各种函数及传感器功能<br />
 									 /举点栗子<br />
@@ -47,8 +52,58 @@
 									 /c&c++语言</p>
 									
 								</header>
-								<div class="image main"><img src="images/th.jpg" alt="" /></div>
-								<p>暂无更新</p>
+								<div class="image main"><img src="images/pic14.jpg" alt="" /></div>
+								
+								<p><h2>0.1 什么是Ardiuno?</h2></p>
+								<p><em>"Ardiuno 是一款便捷灵活、方便上手的开源电子原型平台，包含硬件（各种型号的arduino板）和软件（arduino IDE).她适用于艺术家、设计师、爱好者和对于“互动”有兴趣的朋友们。"（引自官方介绍）</em>当然它是一种单片机，但是个人认为这个词语本身会给不了解的人一种“好像很厉害很不好接触”的感觉，其实不然。<br />
+									 如果你是学生，Ardiuno能让你很快很直观地感受到成果，而且可塑性强可以做不少好玩的。如果你想做简易开发，Ardiuno开发速度快，不过不适合量产。如果你是想给孩子找个科教玩具的家长，小心别让孩子把插针吃下去。如果你是单片机大佬……打扰了！！！（捂脸
+				
+									
+									<h3>最基本的使用条件<h3>
+										<p>硬件：Ardiuno控制板（可从<a href="https://www.arduino.cc">官网</a>或淘宝购买）和一台电脑（系统Windows、Mac OS、Linux都行）<br />
+									   	关于硬件购买的具体建议可以参考<a href=http://www.arduino.cn/thread-11017-1-1>关于Ardiuno及其周边配件的购买建议</a><br />
+									   	软件：Ardiuno IDE <a href="https://www.arduino.cc/en/Main/Software">官网下载地址：有下载和在线两种</a> 顺便一提，下载前官网会问你要不要为Ardiuno贡献光和热和毛爷爷（Contribution），如果觉得囊中羞涩的话只要点浅灰色的“Just Download”就好了。有的人（比如我）真的眼瞎到看了好久才看到……</p>
+									
+									<h3>Ardiuno的三大优点<h3>
+										<p>1、<strong>对初学者亲和：</strong>Ardiuno基础语言和硬件装配很容易掌握。更重要的是，Ardiuno的普及性已经很强了，意味着你可以找到想要的资源：教程、汉化、类库资源、各种各样的实例.已经开垦好的地，种起作物来总归方便点儿。<br />
+										   2、<strong>开放的开发环境：</strong><em>Arduino的硬件原理图、电路图、IDE软件及核心库文件都是开源的，在开源协议范围内里可以任意修改原始设计及相应代码。(引自《Ardiuno程序设计基础》)</em><br />
+										   3、<strong>跨平台性：</strong>就想刚才已经提到的，目前的三大主流操作系统Windows、Mac OS、Linux它都支持。（艰难求索的Mac用户感动到哭泣）<br />
+											 更详细的<a href:http://www.arduino.cn/thread-5414-1-1.html>关于使用Ardiuno做开发的二三理解</a>
+								
+								<p><h2>1.0 快速上手</h2></p>
+										
+										<h3>1.1板子的构造</h3>
+											<p>不多说，上图</p>
+												<div class="image main"><img src="images/ardino/05.jpg" alt="" /></div>
+													<em> 以UNO为例-最详细</em>
+												<div class="image main"><img src="images/ardino/06.jpg" alt="" /></div>
+													<em>以UNO为例-中文</em>
+										
+										<h3>1.2使用IDE</h3>
+											<p> 完成安装以后，打开IDE应该是这样的。</p>
+												
+												<div class="image main"><img src="images/ardiuno/02.jpg"alt=""/><div>
+												<div class="image main"><img src="images/ardino/01.jpg" alt="" /></div>
+													
+													<em>我用的是Mac OS,所以操作栏在屏幕左上角。</em>
+											
+												
+											<p>在使用IDE之前，要调整开发板和端口的信息。
+												<div class="image main"><img src="images/ardino/03.jpg" alt="" /></div>
+													<em>根据你买的开发版型号选择，别告诉我你不知道自己买的是啥（吐舌</em>
+												<div class="image main"><img src="images/ardino/04.jpg" alt="" /></div>
+													<em>开发板和电脑连接后会跳出新的选项，也就是你应该选的那个选项。注意每次板子和电脑重新连接以后都要重新选择一遍端口。</em>
+											
+											<p>在【位置：工具/串口监视器】可以看到IDE运行的情况</p>
+										
+										<h3>1.3Ardiuno语言的简单了解</h3>
+											<p>对任何一种编程语言（MIT App Inventor那种不算）有一定了解的人都可以跳过这一部分，更详细的语言内容会在之后的更新中提到。或者你可以在<a href="函数参考.html">函数参考汉化板块</a>中查看我渣翻的官方文件。</p>
+													<h4>而对于毫无语言基础的旁友们：你不得不看懂的最基础语言</h4>
+													 以下图传感器和小灯的结合为例
+													<div class="image main"><img src="images/ardino/07.jpg" alt="" /></div>
+													<p>没有基础但想自学的话，建议先看一遍常用的函数/语句，不用全记下来，就像冰箱，大概知道一下里面有点儿什么就成。然后多看<a href="https://www.arduino.cc/en/Tutorial/HomePage">例子</a>,看到不懂就查。高一的旁友可以在信息课上学。（如果你不觉得太慢太无聊x）<sub>2018.1.26更新点</sub></p>
+										
+									
 							</section>
 
 					</div>
@@ -65,7 +120,7 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/：/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
