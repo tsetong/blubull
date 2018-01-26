@@ -24,8 +24,8 @@
 					<nav id="nav">
 						<ul class="links">
 							<li><a href="generic2.html">编程相关首页</a></li>
-							<li class="active"><a href="Ardiuno.html">初学Ardiuno</a></li>
-							<li><a href="Reference">函数参考</a></li>
+							<li class="active"><a href="函数参考.html">函数参考</a></li>
+							<li><a href="Ardiuno.html">初学Ardiuno</a></li>
 						</ul>
 						
 					</nav>
@@ -36,19 +36,220 @@
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
-									<span class="date">日期</span>
+									<span class="date">第一次更新：2018.2.26</span>
 									<h1>初学Ardiuno</h1>
 									
-									<p> Ardiuno:适合喜欢直观感受的编程初学者<br />
-									 /下载与安装<br />
-									 /各种函数及传感器功能<br />
-									 /举点栗子<br />
-									 /Ardiuno语言<br />
-									 /c&c++语言</p>
+									<p> 来源：Ardiuno官网</p>
 									
 								</header>
-								<div class="image main"><img src="images/th.jpg" alt="" /></div>
-								<p>暂无更新</p>
+								<div class="image main"><img src="images/pic13.jpg" alt="" /></div>
+	<p><h2>FUNCTIONS</h2><br />
+	<blond>For controlling the Arduino board and performing computations.</blond></p>
+
+		<p><strong>Digital I/O</strong><br />
+								digitalRead()<br />
+								digitalWrite()<br /> 
+								pinMode()</p>
+									
+		<p><strong>Analog I/O</strong><br />
+								analogRead()<br />
+								analogReference()<br />
+								analogWrite()</p>
+								
+		<p><strong>Zero, Due & MKR Family</strong><br />
+								analogReadResolution()<br /> 
+								analogWriteResolution()<br /> 
+								Advanced I/O<br />
+								noTone()<br /> 
+								pulseIn()<br /> 
+								pulseInLong()<br /> 
+								shiftIn()<br /> 
+								shiftOut()<br /> 
+								tone()</p> 
+
+		<p><strong>Time</strong><br />
+								delay() <br />
+								delayMicroseconds()<br /> 
+								micros() <br />
+								millis()</p> 
+								
+		<p><strong>Math</strong><br />
+								abs() <br />
+								constrain()<br />
+								map()<br /> 
+								max()<br /> 
+								min()<br /> 
+								pow()<br /> 
+								sq()<br /> 
+								sqrt()</p> 
+
+		<p><strong>Trigonometry</strong><br />
+								cos()<br /> 
+								sin()<br /> 
+								tan()<br /> 
+								
+		<p><strong>Characters</strong><br />
+								isAlpha()<br /> 
+								isAlphaNumeric()<br /> 
+								isAscii()<br /> 
+								isControl()<br /> 
+								isDigit()<br /> 
+								isGraph()<br /> 
+								isHexadecimalDigit()<br /> 
+								isLowerCase()<br />  
+								isPrintable()<br /> 
+								isPunct()<br /> 
+								isSpace()<br /> 
+								isUpperCase()<br /> 
+								isWhitespace()</p>  
+								
+		<p><strong>Random Numbers</strong><br />
+								random()<br /> 
+								randomSeed()</p>
+								
+		<p><strong>Bits and Bytes</strong><br />
+								bit()<br /> 
+								bitClear()<br /> 
+								bitRead()<br /> 
+								bitSet()<br /> 
+								bitWrite()<br /> 
+								highByte()<br /> 
+								lowByte()</p>
+								
+		<p><strong>External Interrupts</strong><br />
+								attachInterrupt()<br /> 
+								detachInterrupt()</p>  
+								
+		<p><strong>Interrupts</strong></p>
+								interrupts()<br /> 
+								noInterrupts()<br /> 
+								
+		<p><strong>Communication</strong></p>
+								serial<br /> 
+								stream<br /> 
+								USB<br /> 
+								Keyboard<br /> 
+								Mouse</p> 
+
+	<p><h2>VARIABLES</h2><br />
+	<blond>Arduino data types and constants.</blond></p>
+
+
+		<p><strong>Constants</strong><br />
+								Floating Point Constants<br /> 
+								Integer Constants<br />  
+								HIGH | LOW <br />
+								INPUT | OUTPUT | INPUT_PULLUP <br />
+								LED_BUILTIN <br />
+								true | false </p>
+									
+
+		<p><strong>Conversion</strong><br />
+								byte()<br /> 
+								char()<br /> 
+								float()<br /> 
+								int()<br />  
+								long()<br /> 
+								word()</p>
+
+		<p><strong>Data Types</strong><br />
+								String()<br /> 
+								array<br />  
+								bool<br /> 
+								boolean<br /> 
+								byte<br /> 
+								char<br /> 
+								double<br /> 
+								float<br /> 
+								int<br /> 
+								long<br /> 
+								short<br /> 
+								string<br /> 
+								unsigned char <br />
+								unsigned int<br /> 
+								unsigned long<br /> 
+								void<br />  
+								word</p> 
+
+		<p><strong>Variable Scope & Qualifiers</strong><br />
+								const<br /> 
+								scope<br />  
+								static<br />  
+								volatile </p>
+
+		<p><strong>Utilities</strong><br />
+								PROGMEM<br /> 
+								sizeof()</p> 
+
+	<p><h2>STRUCTURE</h2><br />
+	<blond>The elements of Arduino (C++) code.</blond><br />
+
+
+		<p><strong>Sketch</strong><br />
+								loop() <br />
+								setup()</p> 
+
+		<p><strong>Control Structure</strong><br />
+								break<br /> 
+								continue<br /> 
+								do...while<br /> 
+								else<br /> 
+								for<br /> 
+								goto<br /> 
+								if...else<br /> 
+								return<br /> 
+								switch...case<br /> 
+								while<br /> 
+								Further Syntax<br />
+								#define (define)<br />  
+								#include (include)<br /> 
+								/* */ (block comment)<br /> 
+								// (single line comment)<br /> 
+								; (semicolon)<br /> 
+								{} (curly braces)</p> 
+								
+		<p><strong>Arithmetic Operators</strong><br />
+								% (modulo)<br /> 
+								* (multiplication)<br />  
+								+ (addition)<br /> 
+								- (subtraction)<br /> 
+								/ (division)<br /> 
+								= (assignment operator)</p> 
+								
+		<p><strong>Comparison Operators</strong><br />
+								!= (not equal to) <br />
+								< (less than)<br /> 
+								<= (less than or equal to)<br /> 
+								== (equal to)<br /> 
+								> (greater than)<br /> 
+								>= (greater than or equal to)</p> 
+								
+		<p><strong>Boolean Operators</strong><br />
+								! (logical not)<br /> 
+								&& (logical and)<br /> 
+								|| (logical or)</p> 
+								
+		<p><strong>Pointer Access Operators</strong><br />
+								& (reference operator)<br /> 
+								* (dereference operator)</p> 
+								
+		<p></strong>Bitwise Operators</strong><br />
+								& (bitwise and)<br /> 
+								<< (bitshift left)<br /> 
+								>> (bitshift right)<br /> 
+								^ (bitwise xor)<br /> 
+								| (bitwise or)<br /> 
+								~ (bitwise not)</p> 
+								
+		<p><strong>Compound Operators</strong><br />
+								&= (compound bitwise and)<br /> 
+								*= (compound multiplication) <br />
+								++ (increment)<br /> 
+								+= (compound addition)<br /> 
+								-- (decrement)<br /> 
+								-= (compound subtraction)<br /> 
+								/= (compound division)<br /> 
+								|= (compound bitwise or) </p>
 							</section>
 
 					</div>
