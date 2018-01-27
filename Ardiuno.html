@@ -4,7 +4,7 @@
 -->
 <html>
 	<head>
-		<title>BluBull的博客-Python语言入门</title>
+		<title>BluBull的博客-Ardiuno</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets01/css/main.css" />
@@ -59,16 +59,16 @@
 									 如果你是学生，Ardiuno能让你很快很直观地感受到成果，而且可塑性强可以做不少好玩的。如果你想做简易开发，Ardiuno开发速度快，不过不适合量产。如果你是想给孩子找个科教玩具的家长，小心别让孩子把插针吃下去。如果你是单片机大佬……打扰了！！！（捂脸
 				
 									
-									<h3>最基本的使用条件<h3>
-										<p>硬件：Ardiuno控制板（可从<a href="https://www.arduino.cc">官网</a>或淘宝购买）和一台电脑（系统Windows、Mac OS、Linux都行）<br />
-									   	关于硬件购买的具体建议可以参考<a href=http://www.arduino.cn/thread-11017-1-1>关于Ardiuno及其周边配件的购买建议</a><br />
-									   	软件：Ardiuno IDE <a href="https://www.arduino.cc/en/Main/Software">官网下载地址：有下载和在线两种</a> 顺便一提，下载前官网会问你要不要为Ardiuno贡献光和热和毛爷爷（Contribution），如果觉得囊中羞涩的话只要点浅灰色的“Just Download”就好了。有的人（比如我）真的眼瞎到看了好久才看到……</p>
+									<h3>最基本的使用条件</h3>
+										<p>硬件：Ardiuno控制板（可从<u><a href="https://www.arduino.cc">官网</a></u>或淘宝购买）和一台电脑（系统Windows、Mac OS、Linux都行）<br />
+									   	关于硬件购买的具体建议可以参考<u><a href=http://www.arduino.cn/thread-11017-1-1>关于Ardiuno及其周边配件的购买建议</a></u><br />
+									   	软件：Ardiuno IDE <u><a href="https://www.arduino.cc/en/Main/Software">官网下载地址：有下载和在线两种</a> </u>顺便一提，下载前官网会问你要不要为Ardiuno贡献光和热和毛爷爷（Contribution），如果觉得囊中羞涩的话只要点浅灰色的“Just Download”就好了。有的人（比如我）真的眼瞎到看了好久才看到……</p>
 									
-									<h3>Ardiuno的三大优点<h3>
+									<h3>Ardiuno的三大优点</h3>
 										<p>1、<strong>对初学者亲和：</strong>Ardiuno基础语言和硬件装配很容易掌握。更重要的是，Ardiuno的普及性已经很强了，意味着你可以找到想要的资源：教程、汉化、类库资源、各种各样的实例.已经开垦好的地，种起作物来总归方便点儿。<br />
 										   2、<strong>开放的开发环境：</strong><em>Arduino的硬件原理图、电路图、IDE软件及核心库文件都是开源的，在开源协议范围内里可以任意修改原始设计及相应代码。(引自《Ardiuno程序设计基础》)</em><br />
 										   3、<strong>跨平台性：</strong>就想刚才已经提到的，目前的三大主流操作系统Windows、Mac OS、Linux它都支持。（艰难求索的Mac用户感动到哭泣）<br />
-											 更详细的<a href:http://www.arduino.cn/thread-5414-1-1.html>关于使用Ardiuno做开发的二三理解</a>
+											 更详细的<u><a href:http://www.arduino.cn/thread-5414-1-1.html>关于使用Ardiuno做开发的二三理解</a></u>
 								
 								<p><h2>1.0 快速上手</h2></p>
 										
@@ -88,7 +88,7 @@
 													<em>我用的是Mac OS,所以操作栏在屏幕左上角。</em>
 											
 												
-											<p>在使用IDE之前，要调整开发板和端口的信息。
+											<p>在使用IDE之前，要调整开发板和端口的信息。</p>
 												<div class="image main"><img src="images/ardino/03.jpg" alt="" /></div>
 													<em>根据你买的开发版型号选择，别告诉我你不知道自己买的是啥（吐舌</em>
 												<div class="image main"><img src="images/ardino/04.jpg" alt="" /></div>
@@ -97,11 +97,14 @@
 											<p>在【位置：工具/串口监视器】可以看到IDE运行的情况</p>
 										
 										<h3>1.3Ardiuno语言的简单了解</h3>
-											<p>对任何一种编程语言（MIT App Inventor那种不算）有一定了解的人都可以跳过这一部分，更详细的语言内容会在之后的更新中提到。或者你可以在<a href="函数参考.html">函数参考汉化板块</a>中查看我渣翻的官方文件。</p>
+											<p>对任何一种编程语言（MIT App Inventor那种不算）有一定了解的人都可以跳过这一部分，更详细的语言内容会在之后的更新中提到。或者你可以在<u><a href="函数参考.html">函数参考汉化板块</a></u>中查看我渣翻的官方文件。</p>
 													<h4>而对于毫无语言基础的旁友们：你不得不看懂的最基础语言</h4>
 													 以下图传感器和小灯的结合为例
 													<div class="image main"><img src="images/ardino/07.jpg" alt="" /></div>
-													<p>没有基础但想自学的话，建议先看一遍常用的函数/语句，不用全记下来，就像冰箱，大概知道一下里面有点儿什么就成。然后多看<a href="https://www.arduino.cc/en/Tutorial/HomePage">例子</a>,看到不懂就查。高一的旁友可以在信息课上学。（如果你不觉得太慢太无聊x）<sub>2018.1.26更新点</sub></p>
+													<p>没有基础但想自学的话，建议先看一遍常用的函数/语句，不用全记下来，就像冰箱，大概知道一下里面有点儿什么就成。然后多看<u><a href="https://www.arduino.cc/en/Tutorial/HomePage">例子</a></u>,看到不懂就查。高一的旁友可以在信息课上学。（如果你不觉得太慢太无聊x）<sub>2018.1.26更新点</sub></p>
+													
+										<h3>常见错误辨析</h3>
+											<p>待更新。</p>
 										
 									
 							</section>
